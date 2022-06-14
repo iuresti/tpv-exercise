@@ -7,14 +7,7 @@ import oop.library.verifone.model.ExpirationDate;
 public class VerifoneVx690ChipReader {
 
     public Card readCard() {
-        return Card.builder()
-                .account("4558211532252558")
-                .entryMode(EntryMode.INSERTED)
-                .expirationDate(ExpirationDate.builder()
-                        .year(20)
-                        .month(8)
-                        .build())
-                .build();
+        return new Card("4558211532252558", new ExpirationDate(12, 2028), EntryMode.INSERTED);
     }
 
 }

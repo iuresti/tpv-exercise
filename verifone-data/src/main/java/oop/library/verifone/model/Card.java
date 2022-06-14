@@ -24,7 +24,4 @@ public final class Card {
         return entryMode;
     }
 
-    public static CardBuilder builder() {
-        return new CardBuilder();
-    }
 }

@@ -9,7 +9,7 @@ public class VerifoneVx520Display {
      * @param y       vertical position
      * @param message message to be printed
      */
-    public void showMessage(int x, int y, String message) {
+    public void showMessage(String message, int x, int y) {
     }
 
     /**

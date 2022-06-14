@@ -43,7 +43,7 @@ public class Application {
     public String readKey() {
         IngenicoKeyboard ingenicoKeyboard = new IngenicoKeyboard();
 
-        return ingenicoKeyboard.get();
+        return ingenicoKeyboard.getChar();
     }
 
     public void doSale() {
@@ -63,7 +63,7 @@ public class Application {
         ingenicoDisplay.clear();
         ingenicoDisplay.showMessage(5, 20, "Capture monto:");
 
-        String amount = ingenicoKeyboard.get(); //Amount with decimal point as string
+        String amount = ingenicoKeyboard.readLine(); //Amount with decimal point as string
 
         Transaction transaction = new Transaction();
 

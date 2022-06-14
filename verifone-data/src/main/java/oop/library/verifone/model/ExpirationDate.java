@@ -16,8 +16,4 @@ public final class ExpirationDate {
     public int getMonth() {
         return month;
     }
-
-    public static ExpirationDateBuilder builder() {
-        return new ExpirationDateBuilder();
-    }
 }
